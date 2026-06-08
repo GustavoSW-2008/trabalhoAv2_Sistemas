@@ -27,24 +27,24 @@ const removerFuncionario = (index) => {
 }
 </script>
 
-# 📊 Painel Administrativo (Gerência)
+# Painel Administrativo (Gerência)
 
 Visão geral da empresa e gestão de pessoal.
 
-## 📈 Indicadores de Desempenho (Mês Atual)
+## Indicadores de Desempenho (Mês Atual)
 
 <div style="display: flex; gap: 15px; margin-bottom: 30px;">
   <div style="flex: 1; padding: 20px; background-color: #e8f8f5; border-radius: 8px; border-left: 5px solid #1abc9c;">
-    <h3 style="margin: 0; color: #16a085;">💰 Faturamento</h3>
+    <h3 style="margin: 0; color: #16a085;">Faturamento</h3>
     <p style="font-size: 24px; font-weight: bold; margin: 10px 0 0 0;">R$ 45.320,00</p>
   </div>
   <div style="flex: 1; padding: 20px; background-color: #eaf2f8; border-radius: 8px; border-left: 5px solid #3498db;">
-    <h3 style="margin: 0; color: #2980b9;">🔧 OS Concluídas</h3>
+    <h3 style="margin: 0; color: #2980b9;">OS Concluídas</h3>
     <p style="font-size: 24px; font-weight: bold; margin: 10px 0 0 0;">32 Equipamentos</p>
   </div>
 </div>
 
-## 👥 Gestão de Funcionários
+## Gestão de Funcionários
 
 <button v-if="!showForm" @click="showForm = true" style="padding: 10px 15px; background-color: #2980b9; color: white; border: none; border-radius: 4px; cursor: pointer; margin-bottom: 15px;">➕ Cadastrar Novo Funcionário</button>
 
@@ -75,7 +75,7 @@ Visão geral da empresa e gestão de pessoal.
       <td style="padding: 10px; border: 1px solid #ccc;">{{ func.nome }}</td>
       <td style="padding: 10px; border: 1px solid #ccc;">{{ func.cargo }}</td>
       <td style="padding: 10px; border: 1px solid #ccc;">{{ func.data }}</td>
-      <td style="padding: 10px; border: 1px solid #ccc;"><button @click="removerFuncionario(index)" style="color: red; background: none; border: none; cursor: pointer;">❌ Desligar</button></td>
+      <td style="padding: 10px; border: 1px solid #ccc;"><button @click="removerFuncionario(index)" style="color: red; background: none; border: none; cursor: pointer;"> Desligar</button></td>
     </tr>
   </tbody>
 </table>

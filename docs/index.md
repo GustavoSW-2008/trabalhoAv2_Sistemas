@@ -14,11 +14,11 @@ hero:
       link: /tecnico
 
 features:
-  - title: 🛒 Loja de PCs e Peças
+  - title: Loja de PCs e Peças
     details: Compre computadores já montados, periféricos ou peças avulsas.
-  - title: 🔧 Manutenção Especializada
+  - title: Manutenção Especializada
     details: Acompanhe cada etapa do conserto do seu computador.
-  - title: 📱 Acompanhamento Fácil
+  - title: Acompanhamento Fácil
     details: Digite o número da sua OS abaixo para saber o status em tempo real.
 ---
 
@@ -30,8 +30,8 @@ const osEncontrada = ref(null)
 
 // Simulador de banco de dados do cliente
 const minhasOS = [
-  { id: '10293', equipamento: 'PC Gamer Ninja', problema: 'Não dá vídeo ao ligar', status: '🟡 EM ANÁLISE' },
-  { id: '09882', equipamento: 'Notebook Dell', problema: 'Troca de bateria', status: '🟢 CONCLUÍDA' }
+  { id: '10293', equipamento: 'PC Gamer Ninja', problema: 'Não dá vídeo ao ligar', status: 'EM ANÁLISE' },
+  { id: '09882', equipamento: 'Notebook Dell', problema: 'Troca de bateria', status: 'CONCLUÍDA' }
 ]
 
 const buscarStatus = () => {

@@ -12,7 +12,7 @@ const handleSubmit = () => {
   carregando.value = true
   setTimeout(() => {
     carregando.value = false
-    mensagem.value = isLogin.value ? '✅ Login efetuado com sucesso! Redirecionando...' : '✅ Cadastro realizado com sucesso!'
+    mensagem.value = isLogin.value ? 'Login efetuado com sucesso! Redirecionando...' : 'Cadastro realizado com sucesso!'
     email.value = ''
     password.value = ''
     nome.value = ''

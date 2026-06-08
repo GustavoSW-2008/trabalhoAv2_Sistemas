@@ -19,7 +19,7 @@ const acaoRealizada = (nome) => {
 }
 </script>
 
-# 📦 Estoque Central
+# Estoque Central
 
 Pesquise produtos disponíveis para venda ou peças para reposição.
 

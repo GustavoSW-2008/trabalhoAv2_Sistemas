@@ -37,7 +37,7 @@ const finalizarVenda = () => {
 }
 </script>
 
-# 🛒 Painel do Vendedor (PDV)
+# Painel do Vendedor (PDV)
 
 Frente de Caixa e Ponto de Venda.
 
@@ -46,7 +46,7 @@ Frente de Caixa e Ponto de Venda.
   <div style="display: flex; gap: 10px; margin-bottom: 20px;">
     <input v-model="produtoAtual" type="text" placeholder="Nome do Produto" style="flex: 2; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
     <input v-model="precoAtual" type="number" placeholder="Preço (R$)" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
-    <button @click="adicionarItem" style="padding: 8px 15px; background-color: #2980b9; color: white; border: none; border-radius: 4px; cursor: pointer;">➕ Adicionar</button>
+    <button @click="adicionarItem" style="padding: 8px 15px; background-color: #2980b9; color: white; border: none; border-radius: 4px; cursor: pointer;">Adicionar</button>
   </div>
   <h3>Carrinho de Compras</h3>
   <table style="width: 100%; border-collapse: collapse; text-align: left; margin-bottom: 20px;">
@@ -61,7 +61,7 @@ Frente de Caixa e Ponto de Venda.
       <tr v-for="(item, index) in carrinho" :key="item.id">
         <td style="padding: 10px; border: 1px solid #ccc;">{{ item.nome }}</td>
         <td style="padding: 10px; border: 1px solid #ccc;">R$ {{ item.preco.toFixed(2) }}</td>
-        <td style="padding: 10px; border: 1px solid #ccc;"><button @click="removerItem(index)" style="color: red; background: none; border: none; cursor: pointer;">❌ Remover</button></td>
+        <td style="padding: 10px; border: 1px solid #ccc;"><button @click="removerItem(index)" style="color: red; background: none; border: none; cursor: pointer;">Remover</button></td>
       </tr>
       <tr v-if="carrinho.length === 0">
         <td colspan="3" style="padding: 10px; border: 1px solid #ccc; text-align: center;">O carrinho está vazio.</td>
@@ -70,9 +70,9 @@ Frente de Caixa e Ponto de Venda.
   </table>
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <h2 style="margin: 0; color: #27ae60;">Total: R$ {{ total.toFixed(2) }}</h2>
-    <button @click="finalizarVenda" style="padding: 12px 25px; background-color: #27ae60; color: white; border: none; border-radius: 4px; font-weight: bold; font-size: 16px; cursor: pointer;">💳 Finalizar Pagamento</button>
+    <button @click="finalizarVenda" style="padding: 12px 25px; background-color: #27ae60; color: white; border: none; border-radius: 4px; font-weight: bold; font-size: 16px; cursor: pointer;"> Finalizar Pagamento</button>
   </div>
   <div v-if="vendaFinalizada" style="margin-top: 15px; padding: 15px; background-color: #d4edda; color: #155724; border-radius: 4px; border: 1px solid #c3e6cb; text-align: center;">
-    ✅ Venda finalizada com sucesso! Recibo gerado.
+    Venda finalizada com sucesso! Recibo gerado.
   </div>
 </div>
